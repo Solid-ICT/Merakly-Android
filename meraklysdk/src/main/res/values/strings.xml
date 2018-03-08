@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">meraklysdk</string>
+    <string name="intent_key_survey_model">intent_key_survey_model</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="argument_key_question">argument_key_question</string>
+    <string name="intent_key_encoded_identifier">intent_key_encoded_identifier</string>
+    <string name="intent_key_campaign_id">intent_key_campaign_id</string>
+    <string name="intent_key_campaign_option_id">intent_key_campaign_option_id</string>
+    <string name="argument_key_campaign_option_id">argument_key_campaign_option_id</string>
+    <string name="argument_key_campaign_id">argument_key_campaign_id</string>
+    <string name="thanks">Teşekkürler</string>
+</resources>
