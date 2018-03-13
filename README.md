@@ -6,9 +6,24 @@
 
 ### Installation with Gradle
 
-Add this line to your Podfile `pod 'Merakly'` and then do `pod install`.
+In your module level gradle file, in android block add our maven url link to repositories block.
 
-> Note: If you get `[!] Unable to find a specification for 'Merakly'` please do `pod update` before installing. 
+```gradle
+android {
+  ...
+    repositories { maven { url "http://dl.bintray.com/solidict/maven" } }
+}
+```
+
+Then you can add Merakly SDK to your project by adding gradle depedencies our path in same module level gradle.
+
+```gradle
+android {
+  ...
+        compile 'com.solidict.merakly:meraklysdk:1.0.2'
+}
+```
+
 
 ## Usage
 
