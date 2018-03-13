@@ -2,38 +2,44 @@ package com.solidict.merakly;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
-import com.solidict.meraklysdk.BannerListener;
-import com.solidict.meraklysdk.BannerView;
+import com.solidict.meraklysdk.MeraklyAdBanner;
 
-public class MainActivity extends AppCompatActivity implements BannerListener {
+public class MainActivity extends AppCompatActivity {
 
-    BannerView bannerView;
+    MeraklyAdBanner banner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bannerView = (BannerView) findViewById(R.id.banner_view);
-        bannerView.setBannerListener(this);
-        bannerView.init("a40b6dfad96834f19ab9bc7f4194dd4c", "2ce915812b00c27b2fcc65b2289bd74f");
-        //bannerView.load();
+
+        banner = (MeraklyAdBanner) findViewById(R.id.bnr_test);
+        banner.setCredentials("2c452b2e7c887b51399a6522803a6fda", "5159fef648f9c0587f0a9480aa277875");
+
+
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        bannerView.onResume();
+        //bannerView.onResume();
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 
     @Override
-    public void onLoadSuccess() {
-
+    protected void onRestart() {
+        super.onRestart();
     }
 
-    @Override
-    public void onLoadError(String message) {
-
+    public void btnClicked(View view) {
+        banner.load();
     }
 }

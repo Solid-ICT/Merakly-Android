@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TextView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Choice A"
+android:textSize="14sp"
+android:textColor="@color/white"
+android:background="@drawable/bg_segmented_buttons"
+android:paddingTop="6dp"
+android:paddingBottom="6dp"
+android:gravity="center"
+android:layout_below="@id/tv_survey_question"
+android:layout_marginTop="8dp"
+android:layout_marginBottom="8dp"
+    />

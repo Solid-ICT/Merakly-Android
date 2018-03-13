@@ -1,10 +1,10 @@
-package com.solidict.meraklysdk;
+package com.solidict.meraklysdk.utils;
 
 /**
  * Created by emrahkucuk on 30/11/2017.
  */
 
-enum OsType {
+public enum OsType {
     ANDROID,IOS;
 
     public int getValue(){

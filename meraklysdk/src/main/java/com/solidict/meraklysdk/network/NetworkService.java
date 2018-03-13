@@ -1,10 +1,12 @@
-package com.solidict.meraklysdk;
+package com.solidict.meraklysdk.network;
 
 import com.solidict.meraklysdk.models.BannerFullPageClickBody;
 import com.solidict.meraklysdk.models.BannerInlineClickBody;
 import com.solidict.meraklysdk.models.CampaignOptionClickBody;
 import com.solidict.meraklysdk.models.CampaignRandomObject;
 import com.solidict.meraklysdk.models.CampaignRandomResponse;
+import com.solidict.meraklysdk.models.DeviceDetails;
+import com.solidict.meraklysdk.models.InsertLocation;
 import com.solidict.meraklysdk.models.SendSkipEventRequestBody;
 import com.solidict.meraklysdk.models.SendViewEventRequestBody;
 import com.solidict.meraklysdk.models.SurveyOptionClickEventBody;
@@ -66,4 +68,18 @@ public interface NetworkService {
     })
     @POST("action/banner-inline-click")
     Call<CampaignRandomResponse> sendBannerInlineClickEvent(@Header("x-identifier") String identifier, @Body BannerInlineClickBody body);
+
+    @Headers({
+            "Content-Type: application/json"
+    })
+    @POST("update-details")
+    Call<CampaignRandomResponse> sendDeviceDetailsEvent(@Header("x-identifier") String identifier, @Body DeviceDetails body);
+
+    @Headers({
+            "Content-Type: application/json"
+    })
+    @POST("insert-location")
+    Call<CampaignRandomResponse> sendLocationEvent(@Header("x-identifier") String identifier, @Body InsertLocation body);
+
+
 }

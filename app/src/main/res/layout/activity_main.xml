@@ -3,13 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.solidict.merakly.MainActivity">
+    tools:context="com.solidict.merakly.MainActivity"
+    android:background="#bebe">
 
-    <com.solidict.meraklysdk.BannerView
-        android:id="@+id/banner_view"
+
+
+
+
+    <com.solidict.meraklysdk.MeraklyAdBanner
+        android:id="@+id/bnr_test"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></com.solidict.meraklysdk.MeraklyAdBanner>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:layout_centerVertical="true"
+        android:onClick="btnClicked"/>
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.solidict.meraklysdk;
+package com.solidict.meraklysdk.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

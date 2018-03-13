@@ -1,4 +1,4 @@
-package com.solidict.meraklysdk;
+package com.solidict.meraklysdk.models;
 
 /**
  * Created by emrahkucuk on 30/11/2017.

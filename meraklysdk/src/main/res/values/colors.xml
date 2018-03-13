@@ -2,4 +2,10 @@
 <resources>
     <color name="neon_blue">#00fcff</color>
     <color name="dark_blue">#034248</color>
+
+    <color name="cat_color">#ABADD7</color>
+    <color name="bg_color">#2A2A2A</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent"> #00ffffff</color>
+    
 </resources>

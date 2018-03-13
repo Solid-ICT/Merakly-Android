@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/merakly.iml" filepath="$PROJECT_DIR$/merakly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/merakly_sdk.iml" filepath="$PROJECT_DIR$/merakly_sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/meraklysdk/meraklysdk.iml" filepath="$PROJECT_DIR$/meraklysdk/meraklysdk.iml" />
     </modules>
   </component>
